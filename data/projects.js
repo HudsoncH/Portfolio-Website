@@ -51,26 +51,25 @@ export const projects = [
     year: "2025",
   },
   {
-    slug: "project-two",
-    title: "Project Two Title",
+    slug: "ai-targeting-scope",
+    title: "AI Targeting Scope",
     summary:
-      "One or two sentences describing what this project does and the problem it solves.",
+      "A targeting scope that uses AI to identify and track targets in real time.",
     description: [
-      "Replace this with a full write-up of the project: what it is, why you built it, and how it works.",
+      "I have always enjoyed defense technology and the engineering behind it so I decided to work on a project that would be applicable. The scope uses a YOLOv8 model to track targets, and it currently runs through my computer back into a display on the scope. My goal for this project is to make it standalone. As of now, the scope gets power and processing from my computer, but I am planning on integrating a battery and wiring system along with a Jetson Nano chip for onboard processing.",
     ],
-    image: "https://placehold.co/1200x675/1a1f2b/5eead4?text=Project+2",
-    tags: ["MATLAB", "SolidWorks"],
-    github: "https://github.com/yourusername/project-two",
-    demo: null,
+    image: "/images/ai-targeting-scope.png",
+    tags: ["Fusion360", "3-D Printing", "Python", "YOLOv8", "Power Systems"],
+    demo: "/videos/ai-targeting-scope-demo.mp4",
     year: "2025",
   },
   {
-    slug: "project-three",
-    title: "Project Three Title",
+    slug: "fluid-simulation",
+    title: "Fluid Simulation",
     summary:
-      "One or two sentences describing what this project does and the problem it solves.",
+      "Desigining models and mesh for fluid flow in a Plasma Capillary.",
     description: [
-      "Replace this with a full write-up of the project: what it is, why you built it, and how it works.",
+      "While working at the Stanford Linear Accelerator Center (SLAC), I was part of a group helping design capillaries for use in plasma wakefield acceleration. My work involved me building the model capillaries in Ansys then running simulations of different mass flow rates of Argon gas for use before final capillary testing.",
     ],
     image: "https://placehold.co/1200x675/1a1f2b/5eead4?text=Project+3",
     tags: ["C++", "Embedded Systems"],

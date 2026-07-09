@@ -31,6 +31,14 @@ export function generateMetadata({ params }) {
   };
 }
 
+// Video file extensions that should play inline (via a <video> element)
+// instead of just linking out. Anything else (e.g. a YouTube/Google Sites
+// URL) still renders as a plain "Project Demo" link.
+const VIDEO_EXTENSIONS = [".mp4", ".mov", ".webm", ".ogg"];
+function isVideoFile(url) {
+  return VIDEO_EXTENSIONS.some((ext) => url.toLowerCase().endsWith(ext));
+}
+
 export default function ProjectDetailPage({ params }) {
   const project = getProjectBySlug(params.slug);
 
@@ -39,6 +47,8 @@ export default function ProjectDetailPage({ params }) {
   if (!project) {
     notFound();
   }
+
+  const demoIsVideo = project.demo && isVideoFile(project.demo);
 
   return (
     <section className="page-header">
@@ -62,6 +72,13 @@ export default function ProjectDetailPage({ params }) {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={project.image} alt={`${project.title} screenshot`} />
 
+        {demoIsVideo && (
+          // eslint-disable-next-line jsx-a11y/media-has-caption
+          <video controls style={{ width: "100%", marginTop: 24 }}>
+            <source src={project.demo} />
+          </video>
+        )}
+
         <div style={{ marginTop: 32 }}>
           {project.description.map((paragraph, i) => (
             <p key={i}>{paragraph}</p>
@@ -74,7 +91,7 @@ export default function ProjectDetailPage({ params }) {
               GitHub &rarr;
             </a>
           )}
-          {project.demo && (
+          {project.demo && !demoIsVideo && (
             <a href={project.demo} target="_blank" rel="noopener noreferrer">
               {project.demoLabel || "Project Demo"} &rarr;
             </a>
