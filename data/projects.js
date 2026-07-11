@@ -71,9 +71,8 @@ export const projects = [
     description: [
       "While working at the Stanford Linear Accelerator Center (SLAC), I was part of a group helping design capillaries for use in plasma wakefield acceleration. My work involved me building the model capillaries in Ansys then running simulations of different mass flow rates of Argon gas for use before final capillary testing.",
     ],
-    image: "https://placehold.co/1200x675/1a1f2b/5eead4?text=Project+3",
-    tags: ["C++", "Embedded Systems"],
-    github: "https://github.com/yourusername/project-three",
+    image: "/images/fluid-simulation.png",
+    tags: ["Ansys", "CAD", "Fluid Simulation"],
     demo: null,
     year: "2025",
   },
