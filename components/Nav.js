@@ -6,7 +6,7 @@
  * anything with interactivity/state in Next.js's App Router needs that
  * directive at the top of the file.
  *
- * EDIT ME: change "Your Name" below, and add/remove <Link> entries in
+ * EDIT ME: change "Hudson Hall" below, and add/remove <Link> entries in
  * navItems if you add more pages/sections.
  *
  * Note on links: "/#about" means "go to the home page, then jump to the

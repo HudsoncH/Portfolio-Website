@@ -13,10 +13,10 @@ import Footer from "@/components/Footer";
  */
 export const metadata = {
   title: {
-    default: "Your Name | Engineering Portfolio", // EDIT ME
-    template: "%s | Your Name", // EDIT ME (keep the %s)
+    default: "Hudson Hall | Engineering Portfolio", // EDIT ME
+    template: "%s | Hudson Hall", // EDIT ME (keep the %s)
   },
-  description: "Engineering portfolio of Your Name — projects, skills, and contact info.", // EDIT ME
+  description: "Engineering portfolio of Hudson Hall — projects, skills, and contact info.", // EDIT ME
 };
 
 export default function RootLayout({ children }) {

@@ -14,7 +14,7 @@ import { projects } from "@/data/projects";
  *   #contact  - contact links
  *
  * QUICK-START CHECKLIST:
- *   [ ] Replace "Your Name" and the hero tagline below
+ *   [ ] Replace "Hudson Hall" and the hero tagline below
  *   [ ] Write your real bio in the #about section
  *   [ ] Add a real profile photo (see the IMAGES comment below)
  *   [ ] Edit the skills lists
@@ -67,15 +67,15 @@ export default function HomePage() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               className="about-photo"
-              src="https://placehold.co/220x220/1a1f2b/5eead4?text=Photo"
-              alt="Your Name"
+              src="/images/profile.jpg"
+              alt="Hudson Hall"
             />
             <div>
               {/* EDIT ME: your bio */}
               <p>
                 Hi, I&apos;m Hudson Hall. I&apos;m an engineering student
                 studying Engineering Physics at Stanford University. I&apos;m interested
-                in mechatronics and the hands on aspects of the topic
+                in mechatronics and the hands on aspects of the topic.
                 Having the ability to work on many different parts of a project
                 means a lot to me, and I specifically enjoy working on electrical
                 and mechanical systems while also being capable of utilizing multiple

@@ -1,8 +1,8 @@
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 
-// Overrides just the <title> for this page (root layout's "%s | Your Name"
-// template wraps this, so the tab title becomes "Projects | Your Name").
+// Overrides just the <title> for this page (root layout's "%s | Hudson Hall"
+// template wraps this, so the tab title becomes "Projects | Hudson Hall").
 export const metadata = {
   title: "Projects",
 };

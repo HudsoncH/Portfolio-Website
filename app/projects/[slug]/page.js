@@ -21,7 +21,7 @@ export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
 }
 
-// Sets the browser tab title per-project, e.g. "Project One Title | Your Name".
+// Sets the browser tab title per-project, e.g. "Project One Title | Hudson Hall".
 export function generateMetadata({ params }) {
   const project = getProjectBySlug(params.slug);
   if (!project) return {};
